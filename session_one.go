@@ -5,7 +5,7 @@ import (
 	"fmt"
 )
 
-func main() {
+func SessionOne() {
 	err := errors.New("response 500")
 	fmt.Printf("%T = %v\n", err, err)
 
