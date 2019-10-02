@@ -53,7 +53,7 @@ func SessionOne() {
 		fmt.Println(key, "===", value)
 	}
 
-	
+
 	data := [10]string{"a", "b", "c", "d", "e", "f", "g", "h", "i", "j"}
 	var aSlice, bSlice []string
 
@@ -109,7 +109,7 @@ map1["one"] = "Satu"
 fmt.Println("map1: ", map1)
 map2 = map1
 fmt.Println("map2: ", map2)
-map1["one"] = "Sepuluh" 
+map1["one"] = "Sepuluh"
 fmt.Println("map1after: ", map1)// maka map2["one"] adalah Sepuluh
 fmt.Println("map2after: ", map2)
 }
