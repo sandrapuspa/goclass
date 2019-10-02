@@ -1,10 +1,10 @@
 package fibonacci
 
-type Init struct {
-	A, B, limit int
+type InitFibonacci struct {
+	A, B, Limit int
 }
 
-func (f *Init) FindNumberOfFibonacci() []int {
+func (f *InitFibonacci) FindNumberOfFibonacci() []int {
 	var result = []int{f.A, f.B}
 
 	for {
@@ -12,7 +12,7 @@ func (f *Init) FindNumberOfFibonacci() []int {
 		f.A = f.B
 		f.B = c
 
-		if (c > f.limit) {
+		if c > f.Limit {
 			break
 		}
 
