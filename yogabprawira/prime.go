@@ -19,7 +19,7 @@ func main() {
 	i := start
 	n := 0
 	for {
-		if n > 10 {
+		if n >= 10 {
 			break
 		}
 		if isPrime(i) {
