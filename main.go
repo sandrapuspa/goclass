@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	fibonacci "goclass/fibonacci"
+	putra "github.com/ardhiansyahputra/goclass/putra"
 )
 
 func main() {
