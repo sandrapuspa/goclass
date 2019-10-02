@@ -1,4 +1,4 @@
-package fibonacci
+package putra
 
 type InitFibonacci struct {
 	A, B, Limit int

@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	putra "github.com/ardhiansyahputra/goclass/putra"
+	putra "goclass/putra"
 )
 
 func main() {
