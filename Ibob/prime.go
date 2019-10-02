@@ -7,8 +7,8 @@ func prima(N int) (primes []int) {
     for i := 2; i < N; i++ {
         if b[i] == true { continue }
         primes = append(primes, i)
-        for k := i * i; k < N; k += i {
-            b[k] = true
+        for x2 := i * i; x2 < N; x2 += i {
+            b[x2] = true
         }
     }
     return
