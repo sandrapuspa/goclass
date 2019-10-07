@@ -17,12 +17,3 @@ func main() {
     fmt.Printf("pekerjaan\t: %s\n", *pekerjaannya)
     fmt.Printf("alasan\t: %s\n", *alasannya)
 }
-
-func panggilbiodata(nama string, alamat string, pekerjaan string, alasan string) {
-    fmt.Println("nama  : ", nama)
-    fmt.Println("alamat  : ", alamat)
-    fmt.Println("pekerjaan  : ", pekerjaan)
-    fmt.Println("alasan  : ", alasan)
-    fmt.Println()
-    fmt.Println()
-}
