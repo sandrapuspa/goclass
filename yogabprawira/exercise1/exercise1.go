@@ -11,13 +11,14 @@ type DataTeman struct {
 	Nama      string
 	Alamat    string
 	Pekerjaan string
+	Alasan    string
 }
 
 var Data = []DataTeman{
-	{"Yoga", "Jakarta", "Software Engineer"},
-	{"Jodi", "Jakarta", "Web Developer"},
-	{"Ebob", "Jakarta", "Database Admin"},
-	{"Patrick", "Jakarta", "Mahasiswa"},
+	{"Yoga", "Jakarta", "Software Engineer", "Menambah pengalaman"},
+	{"Jodi", "Jakarta", "Web Developer", "Mencari teman"},
+	{"Ebob", "Jakarta", "Database Admin", "Melatih skill"},
+	{"Patrick", "Jakarta", "Mahasiswa", "Mengisi waktu"},
 }
 
 func main() {
@@ -29,7 +30,7 @@ func main() {
 		return
 	}
 	if os.Args[1] == "add" {
-		if len(os.Args) < 5 {
+		if len(os.Args) < 6 {
 			logrus.Error("Argument Invalid!")
 			return
 		}
@@ -37,12 +38,14 @@ func main() {
 			Nama:      os.Args[2],
 			Alamat:    os.Args[3],
 			Pekerjaan: os.Args[4],
+			Alasan:    os.Args[5],
 		}
 		Data = append(Data, dt)
 		for _, val := range Data {
 			logrus.Info("Nama: ", val.Nama)
 			logrus.Info("Alamat: " + val.Alamat)
 			logrus.Info("Pekerjaan: " + val.Pekerjaan)
+			logrus.Info("Alasan: " + val.Alasan)
 		}
 	} else {
 		i, err := strconv.Atoi(os.Args[1])
@@ -53,5 +56,6 @@ func main() {
 		logrus.Info("Nama: " + Data[i].Nama)
 		logrus.Info("Alamat: " + Data[i].Alamat)
 		logrus.Info("Pekerjaan: " + Data[i].Pekerjaan)
+		logrus.Info("Alasan: " + Data[i].Alasan)
 	}
 }
