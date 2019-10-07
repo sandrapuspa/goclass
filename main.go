@@ -1,5 +1,12 @@
 package main
 
+import (
+	"goclass/patrick"
+)
+
 func main() {
-	SessionOne()
+	patrick.Fibonacci()
+	patrick.Prima()
+	patrick.DeretAngka()
+	patrick.Exercise()
 }
