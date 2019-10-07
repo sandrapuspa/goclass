@@ -15,8 +15,7 @@ func isPrime(n int) bool {
 }
 
 func main() {
-	start := 3
-	i := start
+	i := 3 // start with 3
 	n := 0
 	for {
 		if n >= 10 {
