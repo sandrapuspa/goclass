@@ -23,5 +23,4 @@ func hitungderet(start int, n int, mp int) {
         mp = mp + 2
         count = count + 1
     }
-
 }
