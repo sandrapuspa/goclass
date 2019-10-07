@@ -31,13 +31,11 @@ func Exercise() {
 			}
 			if check == -1 {
 				indexArg = append(indexArg, temp)
-				fmt.Println(indexArg)
 			}
 		}
 
 		if check != -1 {
 			insertArg = append(insertArg, v)
-			fmt.Println(insertArg)
 			check = check + 1
 			if check == 4 {
 				check = -1
